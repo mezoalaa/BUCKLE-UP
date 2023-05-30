@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2007184339.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="container">  
+
+        <div class="col-md-5 col-md-offset-1">
+
+            <form class="signup-form">
+
+                <h2 class="text-center">Sign up Now</h2>
+
+                <hr>
+
+                <div class="form-group">
+                    
+                    <input type="text" class="form-control" placeholder="Full Name" required="required">
+
+                </div>
+
+                <div class="form-group">
+
+                    <input type="email" class="form-control" placeholder="Email Address" required="required">
+
+                </div>
+
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="User Name" required="required">
+
+                </div>
+
+                <div class="form-group">
+
+                    <input type="text" class="form-control" placeholder="Password" required="required">
+                    <p>Lost Password<a href="#">Click Here!</a></p>
+
+                </div>
+
+                <div class="form-group text-center">
+
+                    <button type="submit" class="btn btn-blue btn-block">Start Now</button>
+
+                </div>
+
+                <div class="mmm">
+                    <p>If you have an account sign in here?</p>
+                    <a class="ttt" href="login.html">sign in</a>
+                </div>
+                
+
+            </form>
+
+        </div>
+    </div>
+
+        <script>
+            const form=document.querySelector('form');
+        
+            form.addEventListener('submit', event=>{
+                event.preventDefault();
+                const formData = new formData(event.target);
+                
+                console.log(Object.fromEntries(formData));
+            })
+        </script>
+    
+</body>
+</html>
